@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.springframework.cloud</groupId>
     <artifactId>spring-cloud-stream-parent</artifactId>
-    <version>1.1.1.RELEASE</version>
+    <version>1.1.1.0.cos-fork</version>
     <packaging>pom</packaging>
     <parent>
         <groupId>org.springframework.cloud</groupId>
@@ -13,11 +13,23 @@
         <relativePath/>
     </parent>
     <scm>
-        <url>https://github.com/spring-cloud/spring-cloud-stream</url>
-        <connection>scm:git:git://github.com/spring-cloud/spring-cloud-stream.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com/spring-cloud/spring-cloud-stream.git</developerConnection>
+        <url>https://github.com/Cosium/spring-cloud-stream</url>
+        <connection>scm:git:git://github.com/Cosium/spring-cloud-stream.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/Cosium/spring-cloud-stream.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
+    <distributionManagement>
+        <repository>
+            <id>cosium-repo</id>
+            <name>Internal Release Repository</name>
+            <url>https://repo.cosium.com/repository/internal/</url>
+        </repository>
+        <snapshotRepository>
+            <id>cosium-repo-snapshots</id>
+            <name>Internal Snapshot Repository</name>
+            <url>https://repo.cosium.com/repository/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
     <properties>
         <java.version>1.7</java.version>
         <rxjava.version>1.1.10</rxjava.version>
